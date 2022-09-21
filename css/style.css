@@ -1,0 +1,1118 @@
+@font-face {
+    font-family: 'CookieRunOTF-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.innerBox {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+body,html {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.ham {
+    display: none;
+    position: absolute;
+    left: 43px;
+    top: -9px;
+    z-index: 1000;
+}
+
+.ham>a {
+    display: block;
+}
+
+.ham>a>span {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background: white;
+    margin: 8px 0;
+    transition: 0.5s;
+}
+
+.ham>.active>span:first-child {
+    transform: rotate(45deg) translateY(10.5px) translateX(5px);
+}
+
+.ham>.active>span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham>.active>span:last-child {
+    transform: rotate(-45deg) translateY(-10.5px) translateX(5px);
+}
+
+.ham_bg {
+    position: absolute;
+    top: -19px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(25, 29, 36, 0.95);
+    display: none;
+    z-index: 1000;
+}
+
+.headTop {
+    background: #572974;
+    padding: 10px 0;
+}
+
+.headTop>.innerBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left>li {
+    float: left;
+}
+
+.left>li:first-child {
+    font-size: 17px;
+    font-weight: 900;
+    padding-right: 10px;
+}
+
+.left>li>a,
+.right>li>a {
+    color: white;
+}
+
+.right>li>a {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.right>li {
+    float: left;
+}
+
+.right>li:first-child {
+    padding-right: 50px;
+}
+
+.right select {
+    border: none;
+    background: #572974;
+    color: white;
+}
+
+.headBottom {
+    padding: 10px 0;
+    display:block;
+}
+
+.headBottom>.innerBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headBottom .img {
+    display: none;
+}
+
+.rightGnb {
+    padding-top: 20px;
+
+}
+
+.rightGnb>li {
+    float: left;
+    padding-right: 30px;
+}
+
+.rightGnb>li>a {
+    font-size: 22px;
+    font-family: 'CookieRunOTF-Bold';
+}
+
+.rightGnb>li>a::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 10px;
+    background-color: #ffd71e;
+    transition: 0.4s;
+
+}
+
+.rightGnb>li>a:hover::after {
+    width: 100%;
+}
+
+#mainBanner {
+    width: 100%;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner>li {
+    width: 100%;
+    height: 80vh;
+    background: url(../images/mainBanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#mainBanner .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 14%;
+}
+
+.store {
+    width: 51%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.store>li {
+    display: inline-block;
+    border: 1px solid transparent;
+    background: white;
+    padding: 18px 42px;
+    border-radius: 40px;
+    font-size: 21px;
+    font-weight: 800;
+
+    background: rgb(229, 112, 231);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(229, 112, 231, 1) 0%, rgba(114, 224, 234, 1) 22%, rgba(87, 96, 178, 1) 36%, rgba(200, 94, 199, 1) 47%, rgba(191, 174, 93, 1) 52%, rgba(214, 126, 104, 1) 61%, rgba(51, 92, 104, 1) 72%, rgba(199, 127, 255, 1) 87%, rgba(168, 73, 163, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(229, 112, 231, 1) 0%, rgba(114, 224, 234, 1) 22%, rgba(87, 96, 178, 1) 36%, rgba(200, 94, 199, 1) 47%, rgba(191, 174, 93, 1) 52%, rgba(214, 126, 104, 1) 61%, rgba(51, 92, 104, 1) 72%, rgba(199, 127, 255, 1) 87%, rgba(168, 73, 163, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(229, 112, 231, 1) 0%, rgba(114, 224, 234, 1) 22%, rgba(87, 96, 178, 1) 36%, rgba(200, 94, 199, 1) 47%, rgba(191, 174, 93, 1) 52%, rgba(214, 126, 104, 1) 61%, rgba(51, 92, 104, 1) 72%, rgba(199, 127, 255, 1) 87%, rgba(168, 73, 163, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=1);
+    /* IE6-9 */
+    background-size: 400%;
+    background-position: 0 0;
+    transition: 8s;
+}
+
+.store>li:hover {
+    background-position: 400% 0;
+}
+
+.store>li:first-child>a>img {
+    margin-right: 8px;
+}
+
+.store>li>img {
+    padding: 4px 10px 0 0;
+}
+
+.store .storenone {
+    display: none;
+}
+
+.Issue {
+    background-color: #f2f2f2;
+    padding: 35px 0;
+    font-family: 'CookieRunOTF-Bold';
+}
+
+.Issue .hot {
+    text-align: center;
+}
+
+.Issue .hot>h2 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.Issue .hot>h2::after {
+    position: relative;
+    left: 41%;
+    display: block;
+    content: "";
+    width: 0px;
+    height: 20px;
+    background-color: #ffd71e;
+    transition: 0.4s;
+}
+
+.Issue .hot>h2:hover::after {
+    width: 218px;
+}
+
+.Issue .hot p {
+    text-align: right;
+    font-size: 20px;
+}
+
+.Hotissue {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.Hotissue li:first-child>p:first-child {
+    width: 276px;
+    height: 155px;
+    background: url(../images/issue_01.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.Hotissue li:nth-child(2)>p:first-child {
+    width: 276px;
+    height: 155px;
+    background: url(../images/issue_02.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.Hotissue li:nth-child(3)>p:first-child {
+    width: 276px;
+    height: 155px;
+    background: url(../images/issue_03.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.Hotissue li:nth-child(4)>p:first-child {
+    width: 276px;
+    height: 155px;
+    background: url(../images/issue_04.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.Hotissue p:last-child {
+    display: table-cell;
+    width: 276px;
+    height: 80px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.Hotissue p:first-child {
+    transition: 0.2s;
+}
+
+.Hotissue p:first-child:hover {
+    transform: scale(1.1) rotate(20deg);
+}
+
+.battle {
+    padding: 51px 0;
+    position: relative;
+    font-family: 'CookieRunOTF-Bold';
+}
+
+.battle>.innerBox {
+    width: 100%;
+}
+
+.battle .battleWrap,
+.collabo .collaboWrap {
+    display: flex;
+    align-items: center;
+}
+
+.battle .battleWrap>.battleImg {
+    background: url(../images/battle_09.png) no-repeat center center;
+}
+
+.battle .battleWrap>.battleImg img,
+.collabo .collaboWrap>.collaboImg img {
+    width: 800px;
+}
+
+.battle .battleWrap .battleArrow {
+    background: url(../images/battleArrow.png) no-repeat center center;
+    background-size: contain;
+    width: 72px;
+    height: 95px;
+    transform: rotate(180deg);
+}
+
+.battle .battleWrap .explain {
+    z-index: 10;
+}
+
+.battle .battleWrap .explain>p:first-child {
+    font-size: 45px;
+    font-weight: 900;
+    color: #a954d1;
+}
+
+.battle .battleWrap .explain p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0 60px 0;
+    color: #a954d1;
+    white-space: pre-line;
+}
+
+.explain span:first-child>img {
+    width: 147px;
+}
+
+.explain span:nth-child(2)>img {
+    width: 166px;
+}
+
+.explain span:last-child>img {
+    width: 170px;
+}
+
+.battle .battle00 {
+    position: absolute;
+    bottom: 16%;
+    right: 0;
+    animation: 5s ease-in-out 1s infinite normal none running c1;
+}
+
+/* --------------------------------------------- */
+
+.collabo {
+    padding: 51px 0;
+    position: relative;
+    font-family: 'CookieRunOTF-Bold';
+}
+
+.collabo>.innerBox {
+    max-width: 1900px;
+}
+.collabo .collaboWrap {
+    position: relative;
+    justify-content: right;
+}
+.collabo .collaboWrap .collabo00 {
+    position: absolute;
+    bottom: 0;
+    left: -3%;
+    animation: 5s ease-in-out 0.5s infinite normal none running c1;
+}
+
+.collabo .collaboWrap .collaboArrow {
+    background: url(../images/battleArrow.png) no-repeat center center;
+    background-size: contain;
+    width: 72px;
+    height: 95px;
+}
+.collabo .collaboWrap>.collaboImg {
+    background: url(../images/collabo.jpg) no-repeat center center;
+    background-size: 95%;
+}
+.collabo .collaboWrap .explain {
+    width: 27%;
+}
+.collabo .collaboWrap .explain>p:first-child {
+    font-size: 45px;
+    font-weight: 900;
+    color: #e01836;
+
+}
+.collabo .collaboWrap .explain p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0 60px 0;
+    color: #e01836;
+    white-space: pre-line;
+}
+.maincrt {
+    padding: 3% 0 5% 0;
+    background: #594D46;
+    position: relative;
+}
+
+.maincrt>.mainImg {
+    background: url(../images/story_02.png) no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.maincrt>.innerBox {
+    max-width: 1115px;
+}
+
+.maincrt .mainTop {
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 40px;
+}
+
+.maincrt .mainTop>p {
+    font-size: 27px;
+    color: #dbbf91;
+}
+
+.maincrt .mainTop h2 {
+    font-size: 45px;
+    font-weight: 900;
+    color: #dbbf91;
+    margin-bottom: 15px;
+}
+
+.maincrt .mainTop span {
+    font-size: 25px;
+    font-weight: 700;
+    color: #4B2C0C;
+    background-color: #FFF3CD;
+    border: 1px solid #FFF3CD;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+
+.maincrt .mainBottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.maincrt .mainBottom .mainLeft a {
+    display: block;
+    background: url(../images/main_border_01.png) no-repeat center center;
+    background-size: contain;
+    text-align: center;
+    padding:20px;
+}
+
+.maincrt .mainBottom .mainLeft img {
+    opacity: 0.4;
+    width:80%;
+}
+
+.maincrt .mainBottom .mainLeft li:first-child img {
+    opacity: 1;
+}
+
+.maincrt .mainBottom .mainMiddle {
+    background: url(../images/main_border_02.png) no-repeat center center;
+    background-size: contain;
+    width: 55%;
+
+}
+
+.maincrt .mainBottom .mainMiddle li {
+    position: absolute;
+    display: none;
+    animation: 3s ease-in-out infinite normal none running c3;
+}
+
+@keyframes c3 {
+    0% {
+        top: 14%;
+    }
+
+    30% {
+        top: 18%;
+    }
+
+    100% {
+        top: 14%;
+    }
+}
+
+.maincrt .mainBottom .mainMiddle li:first-child {
+    display: block;
+}
+
+.maincrt .mainBottom .mainRight {
+    width: 30%;
+}
+
+.maincrt .mainBottom .mainRight li {
+    position: absolute;
+    display: none;
+}
+
+.maincrt .mainBottom .mainRight li:first-child {
+    display: block;
+}
+
+.maincrt .mainBottom .mainRight li p:first-child {
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFF3CD;
+
+}
+
+.maincrt .mainBottom .mainRight li p:nth-child(2) {
+    font-size: 40px;
+    font-weight: 900;
+    color: #FFF3CD;
+    padding-top: 10px;
+}
+
+.maincrt .mainBottom .mainRight li p:last-child {
+    font-size: 20px;
+    color: #C4A893;
+    white-space: pre-line;
+    line-height: 1.5;
+}
+
+.Cookiestory {
+    padding: 0 0 30px 0;
+    background: url(../images/story.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.Cookiestory .story>.story2 {
+    background: url(../images/story_02.png) no-repeat center center;
+    background-size: contain;
+    width: 70px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.Cookiestory .story h2 {
+    padding-top: 9px;
+    text-align: center;
+    color: #dbbf91;
+}
+
+.Cookiestory .story .coo {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.Cookiestory .story .kie {
+    font-size: 60px;
+}
+
+.Cookiestory .story p {
+    color: rgb(196, 168, 147);
+    white-space: pre-line;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 18px;
+}
+
+.Cookiestory .c5 {
+    position: absolute;
+    right: -4%;
+    top: 22%;
+}
+
+.Cookiestory .c5 {
+    animation-name: c5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes c5 {
+    0% {
+        transform: translateY(10%);
+    }
+
+    30% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(10%);
+    }
+}
+
+.cookie {
+    display: flex;
+}
+
+.cookie .c1 {
+    animation: 5s ease-in-out 1s infinite normal none running c1;
+}
+
+.cookie .c2 {
+    animation: 3s ease-in-out 0.6s infinite normal none running c1;
+}
+
+.cookie .c3 {
+    animation: 3s ease-in-out 0.8s infinite normal none running c1;
+}
+
+.cookie .c4 {
+    animation: 4s ease-in-out 0.8s infinite normal none running c1;
+}
+
+@keyframes c1 {
+    0% {
+        transform: translateY(3%);
+    }
+
+    30% {
+        transform: translateY(-3%);
+    }
+
+    100% {
+        transform: translateY(3%);
+    }
+
+}
+
+footer {
+    padding: 30px 0 20px 0;
+    background: #191d24;
+}
+
+footer ul>li>a,
+footer p,
+footer h2 {
+    color: white;
+}
+
+footer .foot>.img {
+    display: flex;
+    justify-content: center;
+}
+
+footer .foot>.img li {
+    padding-right: 20px;
+}
+
+footer .privacy {
+    width: 39%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+footer .privacy>li {
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 20px 0 20px 0;
+
+}
+
+footer .privacy>li>a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.privacy>li:hover {
+    background-color: white;
+}
+
+.privacy>li:hover>a {
+    color: black;
+}
+
+footer address {
+    text-align: center;
+}
+
+footer address p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer address p:last-child {
+    font-size: 40px;
+    font-family: 'CookieRunOTF-Bold';
+}
+
+@media screen and (max-width:1700px) {
+    /* 없애기 */
+    .battle .battleWrap .battleArrow,
+    .battle .battleWrap .explain {
+        display: none;
+    }
+
+    .collabo .collaboWrap .collaboArrow,
+    .collabo .collaboWrap .explain {
+        display: none;
+    }
+    
+    /* 나타내기(바꾸기) */
+    .store {
+        width: 85%;
+    }
+
+    .battle .battleWrap {
+        justify-content: left;
+    }
+
+    .battle .battle00 {
+        left:46%;
+    }
+
+    .collabo .collaboWrap .collabo00 {
+        z-index: 100;
+        left:23%;
+    }
+}
+@media screen and (max-width:1380px){
+    .cookie{
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        grid-template-columns:160px 160px 160px 160px;
+    }
+}
+@media screen and (max-width:1130px) {
+    /* 나타내기(바꾸기) */
+    .Hotissue {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .Hotissue li:first-child>p:first-child,
+    .Hotissue li:nth-child(2)>p:first-child,
+    .Hotissue li:nth-child(3)>p:first-child,
+    .Hotissue li:nth-child(4)>p:first-child {
+        width: 480px;
+        height: 270px;
+    }
+
+    .Hotissue p:last-child {
+        width: 480px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:1110px) {
+    /* 나타내기(바꾸기) */
+    .store {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    /* 나타내기(바꾸기) */
+    .Issue .hot>h2::after{
+        left:39%;
+    }
+
+    .maincrt .mainBottom ul{
+        width:100% !important;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .battle .battle00{
+        bottom:11%;
+    }
+    .collabo .collaboWrap .collabo00{
+        left:3%;
+    }
+    .battle .battle00,
+    .collabo .collaboWrap .collabo00 {
+        width: 20%;
+    }
+    .maincrt .mainBottom .mainMiddle,
+    .maincrt .mainBottom .mainRight{
+        height:100vw;
+        width:50%;
+    }
+    .maincrt .mainBottom .mainMiddle img{
+        width:120%;
+    }
+    .maincrt .mainBottom .mainLeft img{
+        width:100%;
+    }
+    .battle .battle00 img,
+    .collabo .collaboWrap .collabo00 img {
+        width: 100%;
+    }
+    .Cookiestory .c5{
+        width:30vw;
+        top:54%;
+    }
+    .Cookiestory .c5>img{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:1010px) {
+    /* 나타내기(바꾸기) */
+    footer .privacy {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:980px) {
+    /* 나타내기(바꾸기) */
+    .Hotissue>li {
+        margin-bottom: 20px;
+    }
+
+    .Hotissue li:first-child>p:first-child,
+    .Hotissue li:nth-child(2)>p:first-child,
+    .Hotissue li:nth-child(3)>p:first-child,
+    .Hotissue li:nth-child(4)>p:first-child {
+        width: 380px;
+        height: 215px;
+    }
+
+    .Hotissue p:last-child {
+        width: 380px;
+        height: 66px;
+    }
+}
+
+@media screen and (max-width:945px) {
+    /* 없애기 */
+    .store>li:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:780px) {
+    /* 나타내기(바꾸기) */
+    .Issue .hot>h2::after{
+        left:35%;
+    }
+    .Hotissue {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    /* 없애기 */
+    .right {
+        display: none;
+    }
+
+    #mainBanner .logo>img {
+        display: none;
+    }
+
+    .store>li {
+        display: none;
+    }
+
+    /* 나타내기(바꾸기) */
+    .headTop {
+        padding: 20px 0;
+    }
+
+    .headTop>.innerBox {
+        justify-content: right;
+    }
+
+    .headTop .left {
+        padding-right: 30px;
+    }
+
+    .ham {
+        display: block;
+        z-index: 10000;
+    }
+
+    .logo {
+        text-align: center;
+    }
+    .headBottom {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        display: none;
+    }
+    .headBottom>.innerBox {
+        flex-direction: column;
+    }
+
+    .rightGnb>li {
+        float: none;
+        padding-bottom: 20px;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .rightGnb>li>a {
+        font-size: 35px;
+    }
+
+    .headBottom .img {
+        display: flex;
+    }
+
+    .headBottom .img li {
+        float: left;
+        padding-right: 10px;
+    }
+
+    #mainBanner .logo {
+        background: url(../images/mainBanner_02.png) no-repeat center center;
+        background-size: contain;
+        width: 100%;
+        height: 15vh;
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .banner>li {
+        height: 46vw;
+    }
+
+    .store .storenone {
+        display: block;
+        transition: 0;
+        padding: 5px 10px;
+    }
+
+    .battle .battleWrap>.battleImg img,
+    .collabo .collaboWrap .collaboImg img{
+        width: 100%;
+    }   
+
+    .battle .battleWrap>.battleImg {
+        background-size: 96%;
+    }
+    .battle .battle00{
+        left:78%;
+    }
+    .maincrt .mainTop h2{
+        font-size:40px;
+    }
+    .maincrt .mainTop span{
+        font-size:20px;
+    }
+    .maincrt .mainBottom .mainRight li p:nth-child(2){
+        font-size:35px;
+    }
+    .maincrt .mainBottom .mainRight li p:last-child{
+        font-size: 17px;
+    }
+    .cookie{
+        grid-template-columns:repeat(auto-fill, minmax(21%,auto));
+    }
+    .cookie img{
+        width:100%;
+    }
+    .cookie .c1,.cookie .c2,.cookie .c3,.cookie .c4{
+        width:30vw;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    /* 나타내기(바꾸기) */
+    .Issue .hot>h2{
+        font-size: 35px;
+    }
+    .Issue .hot>h2::after{
+        left:26%;
+    }
+    .maincrt .mainTop{
+        padding:30px 0 40px 0;
+    }
+    .maincrt .mainTop>p{
+        font-size:22px;
+    }
+    .maincrt .mainTop h2{
+        font-size: 33px;
+    }
+    .maincrt .mainTop span{
+        font-size: 17px;
+    }
+    .maincrt .mainBottom .mainRight li p:first-child{
+        font-size:23px;
+    }
+    .maincrt .mainBottom .mainRight li p:nth-child(2){
+        font-size:28px;
+    }
+    .maincrt .mainBottom .mainRight li p:last-child{
+        font-size:15px;
+    }
+    .Cookiestory .story .coo{
+        font-size: 20px;
+    }
+    .Cookiestory .story .kie{
+        font-size: 38px;
+    }
+    .Cookiestory .story p{
+        font-size: 14px;
+    }
+    .Cookiestory .c5{
+        top:68%;
+    }
+
+    footer .privacy {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width:410px) {
+
+    /* 나타내기(바꾸기) */
+    .Hotissue li:first-child>p:first-child,
+    .Hotissue li:nth-child(2)>p:first-child,
+    .Hotissue li:nth-child(3)>p:first-child,
+    .Hotissue li:nth-child(4)>p:first-child {
+        width: 305px;
+        height: 171px;
+    }
+
+    .Hotissue p:last-child {
+        width: 305px;
+        height: 66px;
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    /* 나타내기(바꾸기) */
+    .ham{
+        left:12px;
+    }
+    .Issue .hot>h2::after{
+        left:17%;
+    }
+    .maincrt .mainTop>p{
+        font-size: 18px;
+    }
+    .maincrt .mainTop h2{
+        font-size: 25px;
+    }
+    .maincrt .mainTop span{
+        font-size:13px;
+    }
+    .maincrt .mainBottom .mainRight li p:first-child{
+        font-size:20px;
+        margin-top:30px;
+    }
+    .maincrt .mainBottom .mainRight li p:nth-child(2){
+        font-size:24px;
+    }
+    .maincrt .mainBottom .mainRight li p:last-child{
+        font-size:13px;
+    }
+    .Cookiestory .story .coo{
+        font-size:17px;
+    }
+    .Cookiestory .story .kie{
+        font-size: 29px;
+    }
+    .Cookiestory .story p{
+        font-size:11px;
+    }
+    footer .foot>.img li {
+        padding-right: 5px;
+    }
+    footer{
+        padding-bottom:7px;
+    }
+}
